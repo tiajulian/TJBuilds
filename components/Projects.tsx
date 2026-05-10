@@ -1,3 +1,7 @@
+"use client";
+import { motion } from "framer-motion";
+import { fadeUp, stagger, staggerSlow, viewport } from "@/lib/motion";
+
 const projects = [
   {
     number: "01",
@@ -13,7 +17,6 @@ const projects = [
     metric: "10+",
     metricLabel: "bookings / week",
     gradientText: "from-indigo-400 to-violet-400",
-    gradientBorder: "from-indigo-500/30 to-violet-500/30",
     accentText: "text-indigo-400",
     tags: ["Next.js", "Booking System", "Web Development"],
   },
@@ -31,7 +34,6 @@ const projects = [
     metric: "Hours → Seconds",
     metricLabel: "processing invoices",
     gradientText: "from-violet-400 to-pink-400",
-    gradientBorder: "from-violet-500/30 to-pink-500/30",
     accentText: "text-violet-400",
     tags: ["AI / OCR", "Python", "Excel Export", "Automation"],
   },
@@ -49,38 +51,62 @@ const projects = [
     metric: "0 → 1",
     metricLabel: "gap filled",
     gradientText: "from-pink-400 to-amber-400",
-    gradientBorder: "from-pink-500/30 to-amber-500/30",
     accentText: "text-pink-400",
     tags: ["EdTech", "Study Platform", "Full Stack"],
   },
 ];
 
+
 export default function Projects() {
   return (
     <section id="work" className="py-28 bg-[#0d0d18]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex items-center gap-3 mb-8">
+        <motion.div
+          className="flex items-center gap-3 mb-8"
+          initial="hidden"
+          whileInView="show"
+          viewport={viewport}
+          variants={fadeUp}
+        >
           <span className="h-px w-10 bg-pink-500" />
           <span className="text-pink-400 text-xs tracking-[0.2em] uppercase font-semibold">
             Projects
           </span>
-        </div>
+        </motion.div>
 
-        <h2 className="text-4xl md:text-5xl font-black text-white mb-4 leading-tight">
-          Things I&apos;ve{" "}
-          <span className="bg-gradient-to-r from-pink-400 to-amber-400 bg-clip-text text-transparent">
-            actually built
-          </span>
-        </h2>
-        <p className="text-slate-500 text-lg mb-16 max-w-lg leading-relaxed">
-          Every project started with a real problem. Here&apos;s the story behind each one.
-        </p>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={viewport}
+          variants={stagger}
+        >
+          <motion.h2
+            variants={fadeUp}
+            className="text-4xl md:text-5xl font-black text-white mb-4 leading-tight"
+          >
+            Things I&apos;ve{" "}
+            <span className="bg-gradient-to-r from-pink-400 to-amber-400 bg-clip-text text-transparent">
+              actually built
+            </span>
+          </motion.h2>
+          <motion.p variants={fadeUp} className="text-slate-500 text-lg mb-16 max-w-lg leading-relaxed">
+            Every project started with a real problem. Here&apos;s the story behind each one.
+          </motion.p>
+        </motion.div>
 
-        <div className="space-y-6">
+        <motion.div
+          className="space-y-6"
+          initial="hidden"
+          whileInView="show"
+          viewport={viewport}
+          variants={staggerSlow}
+        >
           {projects.map((project) => (
-            <article
+            <motion.article
               key={project.number}
-              className="group bg-[#12131e] border border-white/5 rounded-2xl p-8 md:p-10 hover:border-white/10 transition-all duration-300"
+              variants={fadeUp}
+              whileHover={{ y: -4, transition: { duration: 0.2, ease: "easeOut" } }}
+              className="group bg-[#12131e] border border-white/5 rounded-2xl p-8 md:p-10 hover:border-white/10 transition-colors duration-300"
             >
               {/* Header row */}
               <div className="flex flex-wrap items-start justify-between gap-6 mb-8">
@@ -90,7 +116,7 @@ export default function Projects() {
                   </p>
                   <div className="flex items-baseline gap-4">
                     <span
-                      className={`text-5xl font-black bg-gradient-to-r ${project.gradientText} bg-clip-text text-transparent opacity-25 group-hover:opacity-40 transition-opacity`}
+                      className={`text-5xl font-black bg-gradient-to-r ${project.gradientText} bg-clip-text text-transparent opacity-25 group-hover:opacity-40 transition-opacity duration-300`}
                     >
                       {project.number}
                     </span>
@@ -105,7 +131,6 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Impact callout */}
                 <div className="text-right shrink-0">
                   <div
                     className={`text-3xl md:text-4xl font-black bg-gradient-to-r ${project.gradientText} bg-clip-text text-transparent leading-tight`}
@@ -126,9 +151,7 @@ export default function Projects() {
                   { label: "The Outcome", text: project.outcome },
                 ].map(({ label, text }) => (
                   <div key={label}>
-                    <p
-                      className={`text-xs tracking-widest uppercase font-semibold mb-3 ${project.accentText}`}
-                    >
+                    <p className={`text-xs tracking-widest uppercase font-semibold mb-3 ${project.accentText}`}>
                       {label}
                     </p>
                     <p className="text-slate-400 text-sm leading-relaxed">{text}</p>
@@ -148,20 +171,18 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                {project.url && (
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`text-sm font-semibold bg-gradient-to-r ${project.gradientText} bg-clip-text text-transparent hover:opacity-70 transition-opacity`}
-                  >
-                    Visit site →
-                  </a>
-                )}
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-sm font-semibold bg-gradient-to-r ${project.gradientText} bg-clip-text text-transparent hover:opacity-70 transition-opacity`}
+                >
+                  Visit site →
+                </a>
               </div>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

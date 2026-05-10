@@ -1,3 +1,7 @@
+"use client";
+import { motion } from "framer-motion";
+import { fadeUp, stagger, viewport } from "@/lib/motion";
+
 const pillars = [
   {
     number: "01",
@@ -19,50 +23,67 @@ const pillars = [
   },
 ];
 
+
 export default function Philosophy() {
   return (
     <section className="py-28 bg-[#0a0a12]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex items-center gap-3 mb-8">
+        <motion.div
+          className="flex items-center gap-3 mb-8"
+          initial="hidden"
+          whileInView="show"
+          viewport={viewport}
+          variants={fadeUp}
+        >
           <span className="h-px w-10 bg-violet-500" />
           <span className="text-violet-400 text-xs tracking-[0.2em] uppercase font-semibold">
             How I Work
           </span>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
-          <div>
-            <h2 className="text-4xl md:text-5xl font-black text-white leading-tight mb-6">
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={viewport}
+            variants={stagger}
+          >
+            <motion.h2
+              variants={fadeUp}
+              className="text-4xl md:text-5xl font-black text-white leading-tight mb-6"
+            >
               Real problems.{" "}
               <span className="bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
                 Real solutions.
               </span>
-            </h2>
-            <p className="text-slate-400 text-lg leading-relaxed">
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-slate-400 text-lg leading-relaxed">
               Analytics engineer by day, builder by nature. The work I do at my
               day job: dbt models, complex SQL, dashboards people actually use.
               It feeds directly into what I build outside of it. The skills compound.
               The perspective stays grounded in real problems.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
-          <div className="space-y-8">
+          <motion.div
+            className="space-y-8"
+            initial="hidden"
+            whileInView="show"
+            viewport={viewport}
+            variants={stagger}
+          >
             {pillars.map((pillar) => (
-              <div key={pillar.number} className="flex gap-6 group">
+              <motion.div key={pillar.number} variants={fadeUp} className="flex gap-6 group">
                 <span className="text-4xl font-black text-indigo-500/20 leading-none mt-0.5 w-12 shrink-0 group-hover:text-indigo-500/40 transition-colors duration-300">
                   {pillar.number}
                 </span>
                 <div>
-                  <h3 className="text-white font-bold text-lg mb-2">
-                    {pillar.title}
-                  </h3>
-                  <p className="text-slate-400 leading-relaxed text-sm">
-                    {pillar.description}
-                  </p>
+                  <h3 className="text-white font-bold text-lg mb-2">{pillar.title}</h3>
+                  <p className="text-slate-400 leading-relaxed text-sm">{pillar.description}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
