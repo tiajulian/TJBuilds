@@ -5,7 +5,7 @@ const experiences = [
     period: "Dec 2024 – Present",
     current: true,
     description:
-      "Design and maintain scalable dbt models across staging, mart, and reporting layers, transforming raw data from product, finance, and marketing into trusted datasets used across the business. Write complex SQL in Snowflake, build Tableau dashboards, automate report distribution via PushMetrics, and support pipeline migrations from Stitch to Fivetran.",
+      "This is where analytics engineering really clicked for me. I design and own dbt models that teams across the business rely on every day, which means the pressure to get it right is real. I've migrated pipelines, built dashboards that get opened every morning, and learned that the most valuable thing I can do is make data feel trustworthy to people who aren't data people.",
     tags: ["dbt", "Snowflake", "SQL", "Tableau", "Fivetran", "PushMetrics"],
   },
   {
@@ -14,7 +14,7 @@ const experiences = [
     period: "Jun 2022 – Oct 2024",
     current: false,
     description:
-      "Worked on computer vision and ML, tuning AI algorithms for image recognition and object detection. 2+ years at the intersection of data and AI, building and iterating on production ML systems.",
+      "I joined Lumachain when computer vision felt like the frontier, and spent two years tuning AI algorithms for image recognition and object detection. It was deeply technical and genuinely fascinating work. It also gave me a different intuition about how machines make sense of information, which shapes how I think about data problems today.",
     tags: ["Python", "Computer Vision", "ML", "Image Recognition", "Object Detection"],
   },
   {
@@ -23,7 +23,7 @@ const experiences = [
     period: "Jul 2021 – Jun 2022",
     current: false,
     description:
-      "Started my analytics career building SQL Server reports for enterprise clients. Learned to translate business questions into clear, reliable data outputs.",
+      "My first data job. I was building SQL Server reports for enterprise clients and figuring out what it meant to turn a business question into something useful. The work was unglamorous, but it taught me the thing that still matters most: understanding what someone actually needs to know, not just what they asked for.",
     tags: ["SQL Server", "Reporting", "Data Analysis", "Enterprise"],
   },
 ];
