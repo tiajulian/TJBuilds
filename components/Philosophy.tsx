@@ -38,16 +38,11 @@ export default function Philosophy() {
                 Real solutions.
               </span>
             </h2>
-            <p className="text-slate-400 text-lg leading-relaxed mb-6">
-              I&apos;m an analytics engineer by day and a builder by nature. The work I
-              do at my day job — designing dbt models, writing complex SQL, building
-              dashboards — feeds directly into the tools I build outside of it. The
-              skills compound. The perspective stays grounded.
-            </p>
-            <p className="text-slate-500 leading-relaxed">
-              I&apos;ve worked across fintech, computer vision, and data consulting. Every
-              role taught me something different about how data flows, where it breaks,
-              and what actually makes it useful to the people who need it.
+            <p className="text-slate-400 text-lg leading-relaxed">
+              Analytics engineer by day, builder by nature. The work I do at my
+              day job — dbt models, complex SQL, dashboards people actually use —
+              feeds directly into what I build outside of it. The skills compound.
+              The perspective stays grounded in real problems.
             </p>
           </div>
 

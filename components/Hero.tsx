@@ -55,12 +55,14 @@ export default function Hero() {
         </p>
 
         <p
-          className="text-slate-500 text-base md:text-lg max-w-xl mb-14 leading-relaxed"
+          className="text-slate-400 text-base md:text-lg max-w-2xl mb-14 leading-relaxed"
           style={{ animation: "fadeUp 0.6s ease-out 0.4s both" }}
         >
           4+ years across fintech, computer vision, and analytics engineering.
-          By day I design data pipelines. On my own time, I build tools that
-          actually get used.
+          By day I design data pipelines.{" "}
+          <span className="text-slate-300">
+            On my own time, I build tools that actually get used.
+          </span>
         </p>
 
         {/* CTAs */}
@@ -84,13 +86,13 @@ export default function Hero() {
 
         {/* Scroll hint */}
         <div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 hover:opacity-80 transition-opacity cursor-default"
           style={{ animation: "fadeUp 0.6s ease-out 1s both" }}
         >
-          <span className="text-slate-400 text-xs tracking-widest uppercase">
+          <span className="text-slate-300 text-xs tracking-widest uppercase font-medium">
             Scroll
           </span>
-          <div className="w-px h-8 bg-gradient-to-b from-slate-400 to-transparent" />
+          <div className="w-px h-10 bg-gradient-to-b from-indigo-400 to-transparent" />
         </div>
       </div>
 

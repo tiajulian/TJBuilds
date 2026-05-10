@@ -42,7 +42,15 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="border border-white/20 hover:border-indigo-400/50 text-white font-semibold px-8 py-4 rounded-full transition-all duration-200 text-base hover:bg-white/[0.04]"
           >
-            Connect on LinkedIn →
+            LinkedIn →
+          </a>
+          <a
+            href="https://github.com/tiajulian"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-white/20 hover:border-indigo-400/50 text-white font-semibold px-8 py-4 rounded-full transition-all duration-200 text-base hover:bg-white/[0.04]"
+          >
+            GitHub →
           </a>
         </div>
 

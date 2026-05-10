@@ -21,7 +21,8 @@ const projects = [
     number: "02",
     category: "AI Tool · Data Pipeline Thinking",
     name: "Invoice Snap",
-    url: null,
+    url: "https://github.com/tiajulian",
+    urlLabel: "Code on GitHub →",
     problem:
       "A small business owner was spending hours every week manually reading invoices and typing figures into spreadsheets to track expenses — slow, error-prone, and a real drain on his time.",
     solution:
@@ -150,7 +151,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className={`text-sm font-semibold bg-gradient-to-r ${project.gradientText} bg-clip-text text-transparent hover:opacity-70 transition-opacity`}
                   >
-                    Visit site →
+                    {"urlLabel" in project ? project.urlLabel : "Visit site →"}
                   </a>
                 )}
               </div>
