@@ -26,7 +26,7 @@ export default function Contact() {
 
         <p className="text-slate-400 text-lg md:text-xl mb-14 max-w-lg mx-auto leading-relaxed">
           Whether you&apos;re a business owner with a real pain point, or a recruiter
-          looking for someone who builds and ships — let&apos;s talk.
+          looking for someone who builds and ships. Let&apos;s talk.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 mb-20">

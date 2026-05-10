@@ -5,9 +5,9 @@ const projects = [
     name: "Zenius.au",
     url: "https://zenius.au",
     problem:
-      "A local café had no website and no way for customers to book a table. If you wanted a spot, you had to show up and hope for the best — and they were losing customers every day because of it.",
+      "A local café had no website and no way for customers to book a table. If you wanted a spot, you had to show up and hope for the best. They were losing customers every day because of it.",
     solution:
-      "I noticed the gap, reached out to the owner directly, and built the solution. Zenius.au showcases the café's menu and story, and includes a fully functional booking system — built from scratch.",
+      "I noticed the gap, reached out to the owner directly, and built the solution. Zenius.au showcases the café's menu and story, and includes a fully functional booking system, built from scratch.",
     outcome:
       "The owner now receives 10+ bookings per week through the site. A reliable new revenue stream that runs itself, with zero extra work on his end.",
     metric: "10+",
@@ -24,11 +24,11 @@ const projects = [
     url: "https://github.com/tiajulian",
     urlLabel: "Code on GitHub →",
     problem:
-      "A small business owner was spending hours every week manually reading invoices and typing figures into spreadsheets to track expenses — slow, error-prone, and a real drain on his time.",
+      "A small business owner was spending hours every week manually reading invoices and typing figures into spreadsheets: slow, error-prone, and a real drain on his time.",
     solution:
       "I mapped his exact workflow, then built Invoice Snap: upload any invoice, and AI-powered OCR extracts the text, sums the totals automatically, and exports everything to Excel. Same extract–transform–deliver thinking I apply professionally.",
     outcome:
-      "What used to eat hours now takes seconds. The same pattern I use in data pipelines — applied to a small business problem.",
+      "What used to eat hours now takes seconds. The same pattern I use in data pipelines, applied to a small business problem.",
     metric: "Hours → Seconds",
     metricLabel: "processing invoices",
     gradientText: "from-violet-400 to-pink-400",
@@ -42,11 +42,11 @@ const projects = [
     name: "IndonesianNAATI.com",
     url: "https://indonesiannaati.com",
     problem:
-      "Preparing for the NAATI CCL exam in Indonesian — a language test required for Australian permanent residency — I found almost no dedicated practice material existed online for Indonesian speakers.",
+      "Preparing for the NAATI CCL exam in Indonesian, a language test required for Australian permanent residency, I found almost no dedicated practice material existed online for Indonesian speakers.",
     solution:
       "So I built it myself. A purpose-built study platform for Indonesian-language NAATI candidates, filling a genuine gap in the market with structured practice content.",
     outcome:
-      "This project is personal — it came out of my own PR journey. It's a reminder that the best tools often come from living the problem first.",
+      "This project is personal. It came out of my own PR journey, and it's a reminder that the best tools often come from living the problem first.",
     metric: "0 → 1",
     metricLabel: "gap filled",
     gradientText: "from-pink-400 to-amber-400",

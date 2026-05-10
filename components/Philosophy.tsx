@@ -3,7 +3,7 @@ const pillars = [
     number: "01",
     title: "Live the problem first",
     description:
-      "The best tools come from people who've felt the pain themselves. Every project I've built started with a real frustration — mine, or someone I know.",
+      "The best tools come from people who've felt the pain themselves. Every project I've built started with a real frustration, mine or someone I know.",
   },
   {
     number: "02",
@@ -15,7 +15,7 @@ const pillars = [
     number: "03",
     title: "Deliver something that sticks",
     description:
-      "A dashboard no one opens, an app no one uses — that's not a solution. I care about adoption, outcomes, and building things that keep running long after I hand them over.",
+      "A dashboard no one opens, an app no one uses. That's not a solution. I care about adoption, outcomes, and building things that keep running long after I hand them over.",
   },
 ];
 
@@ -40,8 +40,8 @@ export default function Philosophy() {
             </h2>
             <p className="text-slate-400 text-lg leading-relaxed">
               Analytics engineer by day, builder by nature. The work I do at my
-              day job — dbt models, complex SQL, dashboards people actually use —
-              feeds directly into what I build outside of it. The skills compound.
+              day job: dbt models, complex SQL, dashboards people actually use.
+              It feeds directly into what I build outside of it. The skills compound.
               The perspective stays grounded in real problems.
             </p>
           </div>

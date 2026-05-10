@@ -5,7 +5,7 @@ const experiences = [
     period: "Dec 2024 – Present",
     current: true,
     description:
-      "Design and maintain scalable dbt models across staging, mart, and reporting layers — transforming raw data from product, finance, and marketing into trusted datasets used across the business. Write complex SQL in Snowflake, build Tableau dashboards, automate report distribution via PushMetrics, and support pipeline migrations from Stitch to Fivetran.",
+      "Design and maintain scalable dbt models across staging, mart, and reporting layers, transforming raw data from product, finance, and marketing into trusted datasets used across the business. Write complex SQL in Snowflake, build Tableau dashboards, automate report distribution via PushMetrics, and support pipeline migrations from Stitch to Fivetran.",
     tags: ["dbt", "Snowflake", "SQL", "Tableau", "Fivetran", "PushMetrics"],
   },
   {
@@ -14,7 +14,7 @@ const experiences = [
     period: "Jun 2022 – Oct 2024",
     current: false,
     description:
-      "Worked on computer vision and ML — tuning AI algorithms for image recognition and object detection. 2+ years at the intersection of data and AI, building and iterating on production ML systems.",
+      "Worked on computer vision and ML, tuning AI algorithms for image recognition and object detection. 2+ years at the intersection of data and AI, building and iterating on production ML systems.",
     tags: ["Python", "Computer Vision", "ML", "Image Recognition", "Object Detection"],
   },
   {
